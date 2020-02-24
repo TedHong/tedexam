@@ -9,3 +9,5 @@ DB에서 이미지 목록을 가져와 이미지 호출하도록 설계
 
 -> 수신한 이미지 목록을 DB에 메모리에 쌓은 다음 이미지를 호출하는 것이 일반적이지만
 오랜만에 DB에 넣는 기능을 만들어보고 싶어서 이렇게 만들었습니다.
+
+앱 구조도 : https://github.com/TedHong/tedexam/blob/master/Exam%EA%B5%AC%EC%A1%B0%EB%8F%84.pdf
