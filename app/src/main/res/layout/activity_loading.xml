@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".view.LoadingActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:id="@+id/btn_start_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="32dp"
+                android:layout_weight="1"
+                android:text="Start Activity" />
+
+            <Button
+                android:id="@+id/btn_start_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="32dp"
+                android:layout_weight="1"
+                android:text="Start Fragment" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="EXAM"
+            android:textAlignment="center"
+            android:textColor="#080909"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="by Ted Hong 2019"
+            android:textAlignment="center"
+            android:textColor="#CB000000" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n html 페이지를  파싱해 이미지 주소를 추출하고 DB에 저장 후 \n이미지 주소를 DB에서 가져와 ListView에 표시하는 예제입니다. \nSQLite, Jsoup, Glide, ButterKnife를 사용했습니다.\n(URL : https://www.gettyimagesgallery.com/collection/sasha/)"
+            android:textAlignment="center"
+            android:textColor="#CB000000" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
